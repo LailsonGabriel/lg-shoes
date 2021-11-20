@@ -1,3 +1,5 @@
+![Aplicação funcionando](https://github.com/LailsonGabriel/lg-shoes/blob/main/ezgif.com-gif-maker%20(1).gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -42,6 +44,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+1- Instale todas as Dependências "npm i"
+2- roda esse comando json-server --watch db.json --port 5000
+3- npm start
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
