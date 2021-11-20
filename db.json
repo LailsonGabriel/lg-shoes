@@ -1,0 +1,42 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "https://images.tcdn.com.br/img/img_prod/935724/tenis_adidas_vermelho_preto_masculino_questar_flow_5395_1_cae532c30276eb4adf6cc21bde4e6bb2.png",
+      "title": "Adidas Questar Flow",
+      "price": 359.9,
+      "quantity": 3
+    },
+    {
+      "id": 2,
+      "image": "https://d1blv3w5x7pmo3.cloudfront.net/Custom/Content/Products/64/00/64007_tenis-adidas-lite-racer-fz0394fz0394_m1_637499511172277896.png",
+      "title": "Adidas Lite Racer",
+      "price": 252.9,
+      "quantity": 5
+    },
+    {
+      "id": 3,
+      "image": "https://bompracomprar.com.br/wp-content/uploads/2020/03/Tenis-nike-azul-01.png",
+      "title": "Nike Air Max",
+      "price": 150,
+      "quantity": 2
+    },
+    {
+      "id": 4,
+      "image": "https://images.tcdn.com.br/img/img_prod/728938/tenis_new_balance_fuelcell_propel_v2_feminino_cinza_e_rosa_6767_1_20201207171257.png",
+      "title": "New Balance Wryvhb1",
+      "price": 299,
+      "quantity": 2
+    },
+    {
+      "id": 5,
+      "image": "https://images.tcdn.com.br/img/img_prod/628041/tenis_puma_smash_v2_bdp_vermelho_masculino_11667_1_20200727160957.png",
+      "title": "Puma Suede",
+      "price": 139,
+      "quantity": 3
+    }
+  ],
+  "inCart": [
+    
+  ]
+}
