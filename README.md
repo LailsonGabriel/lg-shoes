@@ -1,5 +1,11 @@
 ![Aplicação funcionando](https://github.com/LailsonGabriel/lg-shoes/blob/main/ezgif.com-gif-maker%20(1).gif)
 
+# Siga esse passo a passo para a aplicação funcionar em sua máquina
+
+1-instale todas as dependências - npm install
+2-rode esse comando em seu terminal "json-server --watch db.json --port 5000"
+3 roda "npm start" em seu terminal
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
