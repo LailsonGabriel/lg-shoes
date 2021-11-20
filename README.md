@@ -1,4 +1,4 @@
-![Aplicação funcionando](https://github.com/LailsonGabriel/lg-shoes/blob/main/ezgif.com-gif-maker%20(1).gif)
+![Aplicação funcionando](https://github.com/LailsonGabriel/lg-shoes/blob/main/gifzin.gif)
 
 # Siga esse passo a passo para a aplicação funcionar em sua máquina
 
