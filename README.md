@@ -1,3 +1,14 @@
+![Aplicação funcionando](https://github.com/LailsonGabriel/lg-shoes/blob/main/gifzin.gif)
+
+# Siga esse passo a passo para a aplicação funcionar em sua máquina
+
+1-instale todas as dependências - npm install
+
+2-rode o comando "json-server --watch db.json --port 5000" em seu terminal 
+
+3 rode o comando "npm start" em seu terminal
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -42,6 +53,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+1- Instale todas as Dependências "npm i"
+2- roda esse comando json-server --watch db.json --port 5000
+3- npm start
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
