@@ -20,10 +20,9 @@ export const requestProduct = () => ({
   type: REQUEST_PRODUCTS,
 })
 
-export const increaseProduct = (id, incraese) => ({
+export const increaseProduct = (increase) => ({
   type: INCREASE_PRODUCT,
-  id,
-  incraese
+  increase
 })
 
 export const deleteProduct = (id) => ({

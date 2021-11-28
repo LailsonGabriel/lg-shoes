@@ -11,9 +11,7 @@ export default function Cart() {
 
   return (
     <div>
-      <ToastContainer
-        position="top-center"
-      />
+      <ToastContainer position="top-center" />
       <Link to="/">
         <FiArrowLeft className="superior" />
       </Link>

@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { deleteProduct, increaseProduct } from '../actions';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { DecreaseQuantity, handleOrAddCart } from '../services/handleOrAddCart';
 
 export default function ShoeCardCart({ id, title, image, price, quantity }) {
   const currentShoe = { id, title, image, price, quantity }; 
@@ -14,23 +15,13 @@ export default function ShoeCardCart({ id, title, image, price, quantity }) {
   const { inCart } = useSelector(state => state.addToCart);
   const { products } = useSelector(state => state.listProducts);
 
-  function handleQuantiy(shoe, condition) {
-    const showInCart = inCart.filter((current) => current.id === shoe.id)[0];
-    const verifyInvetory = products[0].filter((crr) => crr.id === id)[0];
-    if(showInCart.quantity === 1 && condition === 'less') return;
-    if(showInCart.quantity === verifyInvetory.quantity && condition === 'more') return notify();
-    const newProductMore = { ...showInCart, quantity: showInCart.quantity + 1 }
-    const newProductLess = { ...showInCart, quantity: showInCart.quantity - 1 }
-    dispatch(increaseProduct(id, condition === 'more' ? newProductMore : newProductLess))
-  }
-
   return (
     <div className="shoe-cart">
       <img src={ image } alt={ title } />
       <h3>{ title }</h3>
-      <CgMathMinus onClick={ () => handleQuantiy(currentShoe, 'less') } />
+      <CgMathMinus onClick={ () => DecreaseQuantity(currentShoe, inCart, dispatch, increaseProduct) } />
       <p>Qtd: { quantity }</p>
-      <CgMathPlus onClick={ () => handleQuantiy(currentShoe, 'more') } />
+      <CgMathPlus onClick={ () => handleOrAddCart(currentShoe, inCart, products, notify, dispatch, {}, increaseProduct) } />
       <p>
         { 
         (price * quantity)

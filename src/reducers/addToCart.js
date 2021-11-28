@@ -14,7 +14,7 @@ export const addToCart = (state = initialState, action) => {
     case INCREASE_PRODUCT: {
       return {
         ...state,
-        inCart: [...state.inCart.filter((shoe) => shoe.id !== action.id), action.incraese]
+        inCart: action.increase
       }
     }
     case DELETE_PRODUCT: {

@@ -5,23 +5,14 @@ import { addCart, increaseProduct } from '../actions';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../style/showcard.css'
+import { handleOrAddCart } from '../services/handleOrAddCart';
 
 export default function ShoeCard({ id, image, price, title }) {
+  const shoe = { id, image, price, title };
   const notify = () => toast.warn("Não temos mais no estoque");
   const dispatch = useDispatch();
   const { inCart } = useSelector(state => state.addToCart);
   const { products } = useSelector(state => state.listProducts);
-
-  function handleAddCart (id, image, price, title) {
-    const shoeExistInCart = inCart.find((shoe) => shoe.id === id);
-    const inventoryShoe = products[0].find((shoe) => shoe.id === id);
-    const shoe = { id, image, price, title, quantity: 1 };
-    if(shoeExistInCart?.quantity === inventoryShoe.quantity) return notify();
-    if(shoeExistInCart !== undefined) return dispatch(increaseProduct(id, {
-      ...shoe, quantity: shoeExistInCart.quantity + 1
-    }));
-    dispatch(addCart(shoe));
-  }
 
   return (
     <div className="shoe-card">
@@ -31,7 +22,8 @@ export default function ShoeCard({ id, image, price, title }) {
       <div>
         <button
           type="button"
-          onClick={() => handleAddCart(id, image, price, title)}
+          onClick={() => 
+            handleOrAddCart(shoe, inCart, products, notify, dispatch, addCart, increaseProduct)}
         >
           Adicionar ao Carrinho
         </button>
